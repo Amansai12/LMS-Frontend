@@ -1,0 +1,109 @@
+.layer{
+    clip-path: circle(20% at 100% 0%);
+    transition: all 0.5s ease;
+}
+.cardd:hover .layer{
+    clip-path: circle(100%);
+}
+.cardd{
+    transition: transform 0.5s ease;
+}
+.cardd:hover{
+    transform: translateY(-10px);
+}
+
+/* For search box */
+  
+  .input-box {
+    position: relative;
+    height: 76px;
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+  }
+  .input-box i,
+  .input-box .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .input-box i {
+    left: 20px;
+    font-size: 30px;
+    color: #707070;
+  }
+  .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    padding: 0 155px 0 65px;
+    background-color: transparent;
+  }
+
+
+.buttton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #f9675c;
+  outline: 3px #f55b50 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.buttton .text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+.buttton svg path {
+  transition: 400ms;
+}
+
+.buttton:hover {
+  background-color: #f17e75;
+  color: black;
+}
+
+.buttton:hover i {
+  color: black;
+}
+
+.buttton:hover svg path {
+  fill: #007ACC;
+} 
+  
+  /* Responsive */
+  @media screen and (max-width: 500px) {
+    .input-box {
+      height: 66px;
+      margin: 0 8px;
+    }
+    .input-box i {
+      left: 12px;
+      font-size: 25px;
+    }
+    .input-box input {
+      padding: 0 112px 0 50px;
+    }
+    .input-box .button {
+      right: 12px;
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+  }
+
